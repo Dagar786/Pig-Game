@@ -15,6 +15,15 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBOutlet var diceImage: UIImageView!
+    
+    @IBAction func dicePressed(_ sender: Any) {
+        
+        
+    }
+    
+    
+    
+    
 }
 
