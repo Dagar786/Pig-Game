@@ -14,6 +14,8 @@ class ViewController: UIViewController {
     @IBOutlet var p1PointsLable: UILabel!
     @IBOutlet var p2PointsLable: UILabel!
     @IBOutlet var currentPointLable: UILabel!
+    @IBOutlet var currentPlayerTurn: UILabel!
+    
     var playerTurn = 0
     // var playerArray : [Player] = [Player, Player]
     
@@ -27,6 +29,7 @@ class ViewController: UIViewController {
         diceImage.image = UIImage(named: "dice1")
         p1PointsLable.text = "0"
         p2PointsLable.text = "0"
+        currentPlayerTurn.text = "P1 Turn"
     }
 
    
@@ -44,9 +47,11 @@ class ViewController: UIViewController {
         //playerArray[playerTurn].endTurn()
         if playerTurn == 0{
             //p1PointsLable.text = layerArray[playerTurn].getTotalScore()
+            currentPlayerTurn.text = "P2 Turn"
         }
         else if playerTurn == 1{
             //p2PointsLable.text = layerArray[playerTurn].getTotalScore()
+            currentPlayerTurn.text = "P1 Turn"
         }
         //currentPointLable.text = "\(playerArray[playerTurn].getCurrentScore())"
         if playerTurn == 0{playerTurn = 1}
