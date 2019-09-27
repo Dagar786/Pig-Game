@@ -25,7 +25,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         diceImage.image = UIImage(named: "dice1")
-        
+        p1PointsLable.text = "0"
+        p2PointsLable.text = "0"
     }
 
    

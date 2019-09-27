@@ -120,10 +120,8 @@
                     <connections>
                         <outlet property="currentPointLable" destination="Yiq-3f-M6C" id="dh7-7Z-pS3"/>
                         <outlet property="diceImage" destination="E1N-w6-8d4" id="ef0-V8-bAH"/>
-                        <outlet property="p1PointsLable" destination="dAK-RB-8Hm" id="Jzy-X2-Y0n"/>
-                        <outlet property="p1Pointslable" destination="dAK-RB-8Hm" id="8H9-ig-1mx"/>
-                        <outlet property="p2PointLable" destination="ug9-Mi-ve3" id="CkF-9r-lv1"/>
-                        <outlet property="p2PointsLable" destination="ug9-Mi-ve3" id="60F-Jc-CHg"/>
+                        <outlet property="p1PointsLable" destination="dAK-RB-8Hm" id="aWq-Ro-qsa"/>
+                        <outlet property="p2PointsLable" destination="ug9-Mi-ve3" id="2kj-I0-shJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
