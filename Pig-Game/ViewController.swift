@@ -17,7 +17,7 @@ class ViewController: UIViewController {
     @IBOutlet var currentPlayerTurn: UILabel!
     
     var playerTurn = 0
-    // var playerArray : [Player] = [Player, Player]
+    var playerArray : [Player] = [Player(), Player()]
     
     let diceArray : [String] = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"]
     
@@ -36,26 +36,75 @@ class ViewController: UIViewController {
     
     @IBAction func dicePressed(_ sender: Any) {
         
-        //let diceNumber = playerArray[playerTurn].roll()
-        //diceImage.image = UIImage(named: diceArray[diceNumber - 1])
-        //currentPointLable.text = "\(playerArray[playerTurn].getCurrentScore())"
+        let diceNumber = playerArray[playerTurn].roll()
+        diceImage.image = UIImage(named: diceArray[diceNumber - 1])
+        currentPointLable.text = "Points - \(playerArray[playerTurn].getCurrentScore())"
  
     }
     
     
     @IBAction func endTurnPressed(_ sender: Any) {
-        //playerArray[playerTurn].endTurn()
+        playerArray[playerTurn].endTurn()
         if playerTurn == 0{
-            //p1PointsLable.text = layerArray[playerTurn].getTotalScore()
+            p1PointsLable.text = "\(playerArray[playerTurn].getTotalScore())"
             currentPlayerTurn.text = "P2 Turn"
         }
         else if playerTurn == 1{
-            //p2PointsLable.text = layerArray[playerTurn].getTotalScore()
+            p2PointsLable.text = "\(playerArray[playerTurn].getTotalScore())"
             currentPlayerTurn.text = "P1 Turn"
         }
-        //currentPointLable.text = "\(playerArray[playerTurn].getCurrentScore())"
+        currentPointLable.text = "\(playerArray[playerTurn].getCurrentScore())"
         if playerTurn == 0{playerTurn = 1}
         else {playerTurn = 0}
+        currentPointLable.text = "Points - 0"
+    }
+    
+    
+    
+    
+    class Player
+    {
+        
+        var totalScore: Int
+        var roundScore: Int
+        
+        
+        init()
+        {
+            totalScore = 0
+            roundScore = 0
+        }
+        
+        func roll() -> Int
+        {
+            let rollValue:Int = Int.random(in: 1...6)
+            if(rollValue != 1)
+            {
+                roundScore += rollValue
+            }
+            else
+            {
+                roundScore = 0
+            }
+            
+            return rollValue;
+        }
+        
+        func endTurn()
+        {
+            totalScore += roundScore
+            roundScore = 0
+        }
+        
+        func getTotalScore() -> Int
+        {
+            return totalScore
+        }
+        
+        func getCurrentScore() -> Int
+        {
+            return roundScore
+        }
     }
     
     
