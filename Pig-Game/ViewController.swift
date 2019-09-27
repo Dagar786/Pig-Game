@@ -48,7 +48,8 @@ class ViewController: UIViewController {
             //p2PointsLable.text = layerArray[playerTurn].getTotalScore()
         }
         //currentPointLable.text = "\(playerArray[playerTurn].getCurrentScore())"
-        //Anothecomment
+        if playerTurn == 0{playerTurn = 1}
+        else {playerTurn = 0}
     }
     
     
