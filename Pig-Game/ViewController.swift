@@ -58,8 +58,23 @@ class ViewController: UIViewController {
         if playerTurn == 0{playerTurn = 1}
         else {playerTurn = 0}
         currentPointLable.text = "Points - 0"
+        
+        
+        if playerArray[0].getTotalScore() >= 10 || playerArray[1].getTotalScore() >= 10 {
+            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let newViewController = storyBoard.instantiateViewController(withIdentifier: "666")
+            self.present(newViewController, animated: true, completion: nil)
+            
+        }
+        
     }
     
+    
+    
+    public func displayResults(){
+        
+        
+    }
     
     
     

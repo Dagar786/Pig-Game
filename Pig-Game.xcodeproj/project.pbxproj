@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A8710B1C2343A53200DA7C8B /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8710B1B2343A53200DA7C8B /* ThirdViewController.swift */; };
 		A8BB3611233BA99B00933533 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BB3610233BA99B00933533 /* AppDelegate.swift */; };
 		A8BB3613233BA99B00933533 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8BB3612233BA99B00933533 /* ViewController.swift */; };
 		A8BB3616233BA99B00933533 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A8BB3614233BA99B00933533 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A8710B1B2343A53200DA7C8B /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		A8BB360D233BA99B00933533 /* Pig-Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pig-Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8BB3610233BA99B00933533 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A8BB3612233BA99B00933533 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +61,7 @@
 				A8BB3610233BA99B00933533 /* AppDelegate.swift */,
 				A8BB3612233BA99B00933533 /* ViewController.swift */,
 				A8BB3614233BA99B00933533 /* Main.storyboard */,
+				A8710B1B2343A53200DA7C8B /* ThirdViewController.swift */,
 				A8D7EE97233E54B4000142DA /* SecondViewController.swift */,
 				A8BB3617233BA99C00933533 /* Assets.xcassets */,
 				A8BB3619233BA99C00933533 /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				A8D7EE98233E54B4000142DA /* SecondViewController.swift in Sources */,
 				A8BB3613233BA99B00933533 /* ViewController.swift in Sources */,
+				A8710B1C2343A53200DA7C8B /* ThirdViewController.swift in Sources */,
 				A8BB3611233BA99B00933533 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
