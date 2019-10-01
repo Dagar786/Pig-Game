@@ -107,50 +107,7 @@ class ViewController: UIViewController {
         }
     }
     
-    class Player
-    {
-        
-        var totalScore: Int
-        var roundScore: Int
-        
-        
-        init()
-        {
-            totalScore = 0
-            roundScore = 0
-        }
-        
-        func roll() -> Int
-        {
-            let rollValue:Int = Int.random(in: 1...6)
-            if(rollValue != 1)
-            {
-                roundScore += rollValue
-            }
-            else
-            {
-                roundScore = 0
-            }
-            
-            return rollValue;
-        }
-        
-        func endTurn()
-        {
-            totalScore += roundScore
-            roundScore = 0
-        }
-        
-        func getTotalScore() -> Int
-        {
-            return totalScore
-        }
-        
-        func getCurrentScore() -> Int
-        {
-            return roundScore
-        }
-    }
+    
     
     
 }
