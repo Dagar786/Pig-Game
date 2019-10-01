@@ -26,6 +26,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //yess
         diceImage.image = UIImage(named: "dice1")
         p1PointsLable.text = "0"
         p2PointsLable.text = "0"
