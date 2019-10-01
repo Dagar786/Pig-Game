@@ -39,7 +39,7 @@ class ViewController: UIViewController {
         let diceNumber = playerArray[playerTurn].roll()
         diceImage.image = UIImage(named: diceArray[diceNumber - 1])
         currentPointLable.text = "Points - \(playerArray[playerTurn].getCurrentScore())"
- 
+        if diceNumber == 1 {endTurnPressed(true)}
     }
     
     
