@@ -60,10 +60,10 @@ class ViewController: UIViewController {
         currentPointLable.text = "Points - 0"
         
         
-        if playerArray[0].getTotalScore() >= 10 || playerArray[1].getTotalScore() >= 10 {
-            let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-            let newViewController = storyBoard.instantiateViewController(withIdentifier: "666")
-            self.present(newViewController, animated: true, completion: nil)
+        if playerArray[0].getTotalScore() >= 100 || playerArray[1].getTotalScore() >= 100 {
+            
+            
+            self.performSegue(withIdentifier: "666", sender: self)
             
         }
         
@@ -71,10 +71,7 @@ class ViewController: UIViewController {
     
     
     
-    public func displayResults(){
-        
-        
-    }
+    
     
     
     
@@ -124,6 +121,14 @@ class ViewController: UIViewController {
     }
     
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        //Get the new view controller using segue.destination.
+        //Pass the selected object to the new view controller.
+        let displayVC = segue.destination as! ThirdViewController
+        displayVC.score1 = "\(playerArray[0].getTotalScore())"
+        displayVC.score2 = "\(playerArray[1].getTotalScore())"
+        
+    }
     
     
 }

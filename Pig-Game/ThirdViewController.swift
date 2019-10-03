@@ -9,22 +9,30 @@
 import UIKit
 
 class ThirdViewController: UIViewController {
-
+    var score1 : String?
+    var score2 : String?
+    
+    @IBOutlet var finalP1Score: UILabel!
+    @IBOutlet var finalP2Score: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        finalP1Score.text = score1
+        finalP2Score.text = score2
     }
     
+    
+    
+    
+    
+    
 
-    /*
-    // MARK: - Navigation
+    
+    //MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
+    //In a storyboard-based application, you will often want to do a little preparation before navigation
+    
+   
 
 }

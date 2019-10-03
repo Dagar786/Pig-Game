@@ -132,6 +132,14 @@
                                     <action selector="endTurnPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oI7-uw-DSt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZFb-gy-xZC">
+                                <rect key="frame" x="348" y="832" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="83j-RA-iar" kind="show" identifier="666" id="288-Dx-VQ3"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -151,7 +159,7 @@
         <!--Third View Controller-->
         <scene sceneID="vCU-QU-8dr">
             <objects>
-                <viewController storyboardIdentifier="666" id="83j-RA-iar" customClass="ThirdViewController" customModule="Pig_Game" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="666" useStoryboardIdentifierAsRestorationIdentifier="YES" id="83j-RA-iar" customClass="ThirdViewController" customModule="Pig_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9iI-Rt-CdM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,7 +168,7 @@
                                 <rect key="frame" x="137" y="605" width="140" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <segue destination="V7g-CE-DCm" kind="show" id="Gfu-4F-2n5"/>
+                                    <segue destination="V7g-CE-DCm" kind="show" identifier="" id="Gfu-4F-2n5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rhi-sW-e99">
@@ -229,6 +237,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="n6v-Pm-poF"/>
                     </view>
+                    <connections>
+                        <outlet property="finalP1Score" destination="D5z-uz-Ndl" id="HF2-51-ytu"/>
+                        <outlet property="finalP2Score" destination="d6l-O4-WDq" id="d8D-dh-U4h"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a2o-Y4-1eE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
