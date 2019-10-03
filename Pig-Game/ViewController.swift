@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     
     let diceArray : [String] = ["dice1", "dice2", "dice3", "dice4", "dice5", "dice6"]
     
-    
+    //somecomment
     
     override func viewDidLoad() {
         super.viewDidLoad()
