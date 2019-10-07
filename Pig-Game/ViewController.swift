@@ -127,6 +127,8 @@ class ViewController: UIViewController {
         let displayVC = segue.destination as! ThirdViewController
         displayVC.score1 = "\(playerArray[0].getTotalScore())"
         displayVC.score2 = "\(playerArray[1].getTotalScore())"
+        if playerArray[0].getTotalScore() > playerArray[1].getTotalScore() {displayVC.winner = "Winner is P1"}
+        else {displayVC.winner = "Winner is P2"}
         
     }
     

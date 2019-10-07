@@ -233,6 +233,19 @@
                                 </attributedString>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSq-4R-ftd">
+                                <rect key="frame" x="108" y="89" width="199" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Winner is P1">
+                                        <attributes>
+                                            <font key="NSFont" size="38" name=".AppleSystemUIFont"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="n6v-Pm-poF"/>
@@ -240,6 +253,7 @@
                     <connections>
                         <outlet property="finalP1Score" destination="D5z-uz-Ndl" id="HF2-51-ytu"/>
                         <outlet property="finalP2Score" destination="d6l-O4-WDq" id="d8D-dh-U4h"/>
+                        <outlet property="winnerLabel" destination="CSq-4R-ftd" id="LLv-vX-pDu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a2o-Y4-1eE" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -457,6 +471,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="cXE-eu-4yp"/>
+        <segue reference="Gfu-4F-2n5"/>
     </inferredMetricsTieBreakers>
 </document>
